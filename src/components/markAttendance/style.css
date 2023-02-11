@@ -1,0 +1,32 @@
+.mark-attendance-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.date-subject-div {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+input, select {
+    margin: 0px 10px;
+}
+
+.students-display {
+    justify-content: center;
+    display: flexbox;
+    /* width: 500px; */
+    min-width: 100px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+    gap: 100px;
+    border-radius: 4px;
+    /* background-color: #626ed4; */
+}

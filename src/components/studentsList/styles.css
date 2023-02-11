@@ -1,0 +1,10 @@
+.container {
+    padding: 10px;
+}
+.input-box {
+    padding: 0px 0px 10px 0px;
+    /* background-color: blue; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

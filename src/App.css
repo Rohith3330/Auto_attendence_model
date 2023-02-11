@@ -1,0 +1,194 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.main-container {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.nav {
+  height: 71px;
+  display: flex;
+  position: static;
+  align-items: center;
+  justify-content: end;
+  /* background: aqua; */
+  padding: 0px 10px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.logo--name {
+  padding: 10px 0px;
+  display: flex;
+  /* margin: 0px auto; */
+  justify-content: center;
+  font-family: "Cabin Sketch", sans-serif;
+  margin: 0;
+  color: #626ed4;
+  font-size: 50px;
+}
+
+.sidenav {
+  width: 250px;
+  transition: width 0.3s ease-in-out;
+  height: 100%;
+  background-color: #383b4e;
+  /* padding-top: 28px; */
+}
+.sidenavClosed {
+  height: 100vh;
+  background-color: #383b4e;
+  /* padding-top: 28px; */
+  transition: width 0.3s ease-in-out;
+  width: 60px;
+  /* font-size: 10px; */
+}
+.sideitem {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #b2bac2;
+  text-decoration: none;
+  overflow: hidden;
+}
+.linkText {
+  padding-left: 16px;
+}
+
+.sideitem:hover {
+  background-color: #244f7d1c;
+}
+.menuBtn {
+  align-self: center;
+  align-self: flex-start;
+  justify-self: flex-end;
+  color: #b2bac2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 26px;
+}
+
+.dashboard {
+  padding: 0px;
+}
+
+.dashboard {
+  padding: 10px;
+}
+
+.dashboard--name {
+  font-family: "Sarabun";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 167%;
+  color: #5b626b;
+  margin: 5px 0;
+}
+.dashboard--welcome {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 5px 0px;
+  margin: 0;
+  color: rgba(42, 49, 66, 0.7);
+}
+
+.all-dashboard--cards {
+  display: flex;
+  /* flex-grow: 1; */
+  /* overflow: scroll; */
+  /* width: 80vw; */
+  /* background-color: blue; */
+  justify-content: space-between;
+}
+
+.dashboard-card {
+  max-width: 25vw;
+  min-width: 230px;
+  width: 282.3px;
+  height: 235px;
+  background: #626ed4;
+  border-radius: 4px;
+  color: white;
+  position: relative;
+}
+.dashboard-card--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.dashboard-card--header {
+  display: flex;
+  /* background-color: blue; */
+  padding: 15px 0px 0px 25px;
+  gap: 10px;
+}
+.dashboard-card--title > * {
+  margin: 0;
+  padding: 0;
+}
+.dashboard-card--title {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  margin-right: auto;
+  padding-left: 10px;
+}
+.dashboard-card--title > .title-name {
+  font-family: "Sarabun";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.dashboard-card--title > .title-count {
+  font-size: 30px;
+}
+.dashboard-card--body {
+  padding-top: 5px;
+  padding-right: 55%;
+  height: 70px;
+}
+.dashboard-card--footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.dashboard--graph > * {
+  /* display: flex; */
+  /* width: 90%; */
+  /* height: 50%; */
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.dashboard--graph--text {
+  font-family: "Sarabun";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0;
+  margin: 3px 0px 10px 0px;
+  color: #5b626b;
+}
+.dashboard--apexchart {
+  position: relative;
+}
