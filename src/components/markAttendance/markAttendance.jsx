@@ -5,6 +5,8 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { getStudentsAttendance, updateStudentsAttendance } from "../../utils/fireBaseUtils";
 import CircleIcon from "./CircleIcon";
+// import subjsuects from "../../keys";
+import { sub } from "../../keys";
 import "./style.css";
 const MarkAttendance = () => {
   const [date, setDate] = useState("");
@@ -37,7 +39,7 @@ const MarkAttendance = () => {
     else setDisplayStudents(false);
   }, [date, subject]);
 
-  const subjects = ["math", "science"];
+  const subjects = sub;
 
   return (
     <div className="mark-attendance-container">

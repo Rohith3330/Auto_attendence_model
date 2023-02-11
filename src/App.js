@@ -10,13 +10,14 @@ import { StudentList } from "./components/studentsList/StudentList";
 import Testing from "./components/Testing";
 import axios, * as others from 'axios';
 import { addStudentIntoDB, getNextId, getStudentData, removeStudentFromDB } from "./utils/fireBaseUtils";
+import { API_KEY } from "./keys";
 
 function App() {
   const [Students, setStudent] = useState([]);
+  console.log(API_KEY);
   useEffect(()=> {
     const loadData = async () => {
       const stuData = await getStudentData();
-      // console.log(stuData);
       setStudent(stuData);
     }
     loadData();
@@ -28,7 +29,7 @@ function App() {
 
     var config = {
       method: 'delete',
-      url: 'https://c4d8-183-82-111-80.in.ngrok.io/delete-student?name='+stud.name,
+      url: API_KEY+'/delete-student?name='+stud.name,
       headers: {
         'Access-Control-Allow-Origin' : '*'
       }
